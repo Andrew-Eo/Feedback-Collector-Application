@@ -8,7 +8,7 @@ const app = express();
 // res is to representing the outgoing response
 // res.send to immediately send some JSON back to who ever made this request
 app.get('/', (req, res) => {
-  res.send({ hi:'there' });
+  res.send({hi:'there' });
 });
 
 // If there is an environment variable that has already defined by Hiroku, go ahead and assign that variable to port. Otherwise, use 5000 as default
