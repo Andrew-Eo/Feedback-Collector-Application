@@ -13,4 +13,4 @@ app.get('/', (req, res) => {
 
 // If there is an environment variable that has already defined by Hiroku, go ahead and assign that variable to port. Otherwise, use 5000 as default
 const PORT = process.env.PORT || 5000;
-app.listen(5000);
+app.listen(PORT);
