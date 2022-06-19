@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
 // The schema will describe what every individual property is going to look like
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
 // You can also add in other properties to extract
 const userSchema = new Schema({
-  googleId: String
+  googleId: String,
+  credits: { type: Number, default: 0 }
 });
 
 // This model class to create a new model instance and then save it to the database
