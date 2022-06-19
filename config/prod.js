@@ -4,6 +4,8 @@ module.exports = {
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
   mongoURI: process.env.MONGO_URI,
   cookieKey: process.env.COOKIE_KEY,
+  stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+  stripeSecretKey: process.env.STRIPE_SECRET_KEY,
 };
 
 // CLIENT ID: '923267213145-tcsk1lro6siktmiv4qrgd2u355smnt60.apps.googleusercontent.com'

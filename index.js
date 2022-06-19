@@ -3,6 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require ('cookie-session');
+const bodyParser = require('body-parser');
 const passport = require('passport');
 const keys = require('./config/keys');
 
@@ -14,6 +15,7 @@ mongoose.connect(keys.mongoURI);
 
 const app = express();
 
+app.use(bodyParser.json());
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 1000,
@@ -27,6 +29,7 @@ app.use(passport.session());
 
 // Second parathesis involes calling the first function
 require('./routes/authRoutes') (app);
+require('./routes/billingRoutes')(app);
 // get is to watch for incoming HTTP requests with this method; other methods include post, put, delete, etc.
 // '/' to watch for requests trrying to access '/'
 // req to representing the incoming requests
