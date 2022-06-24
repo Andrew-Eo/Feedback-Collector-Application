@@ -9,6 +9,7 @@ const keys = require('./config/keys');
 
 // require the passport file and then assign anything out of that file to the passport config variable
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
 mongoose.connect(keys.mongoURI);
@@ -30,6 +31,7 @@ app.use(passport.session());
 // Second parathesis involes calling the first function
 require('./routes/authRoutes') (app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets

@@ -6,6 +6,8 @@ module.exports = {
   cookieKey: process.env.COOKIE_KEY,
   stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
   stripeSecretKey: process.env.STRIPE_SECRET_KEY,
+  sendGridKey: process.env.SEND_GRID_KEY,
+  redirectDomain: process.env.REDIRECT_DOMAIN
 };
 
 // CLIENT ID: '923267213145-tcsk1lro6siktmiv4qrgd2u355smnt60.apps.googleusercontent.com'
