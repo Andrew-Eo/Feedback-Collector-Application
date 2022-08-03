@@ -1,5 +1,4 @@
 # Emaily
-This project was built as part of Stephen Grider's Udemy course, "Node with React: Fullstack Web Development".
 
 Emaily is a web application that allows companies to obtain feedback on their products, in a very efficient way. Emaily lets the user create a survey about their product, typically about a particularly feature of their product, or sometimes even just the product in general. After this survey is created, it is then sent via email to the list of people they want to obtain feedback from. As people respond to these emails, the responses are continuously sent back to the Emaily website for the user/company to see.
 
