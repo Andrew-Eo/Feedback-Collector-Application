@@ -11,17 +11,3 @@ Emaily was built using React, Redux, Express and MongoDB.
 - Allows automated emails containing the user's specific survery to be sent out to various people (using SendGrid)
 - Stores all of the user's previously sent surveys (and responses to the surveys) in a database for the user's future use (using MongoDB)
 
-Here are the screens for this project:
-
-##### Send out surveys with counters of Yes or No.
-![Imgur](https://i.imgur.com/WSTe9xy.png)
-
-##### Adding credits through Stripe (to send out surveys).
-![Imgur](https://i.imgur.com/1PgOxrM.png)
-
-##### New Survey Form.
-![Imgur](https://i.imgur.com/TP72Fks.png)
-
-##### Form Confirmation before it is sent out.
-![Imgur](https://i.imgur.com/gUuHgnL.png)
-
